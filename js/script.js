@@ -16,7 +16,7 @@ $(function() {
 	});
 	
 	// Smooth Scroll
-	$('a:not(".email")').smoothScroll();
+	$('a:not(".email, .source")').smoothScroll();
 	
 	// Team
 	$('#team li').hover(function() {
