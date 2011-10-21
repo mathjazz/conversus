@@ -255,6 +255,7 @@ header {
 
 header .container {
 	overflow: auto;
+	height: 100%;
 }
 
 h1 {
