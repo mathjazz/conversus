@@ -165,7 +165,7 @@ a:hover { color: #036; }
 /**
  * Primary styles
  *
- * Author: 
+ * Author: Matjaž Horvat, Mozeg d.o.o.
  */
 
 body {
@@ -424,6 +424,12 @@ footer {
 footer .top {
 	position: absolute;
 	top: 20px;
+}
+
+footer .source {
+	position: absolute;
+	top: 20px;
+	right: 0;
 }
 
 
