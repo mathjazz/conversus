@@ -356,7 +356,7 @@ nav ul li a {
 #team {
 	list-style: none;
 	line-height: 0;
-	margin: 30px 0 0;
+	margin: 50px 0;
 }
 
 #team > li {
@@ -394,10 +394,6 @@ nav ul li a {
 	-webkit-box-shadow: 0 0 10px #000000;
 }
 
-#sodelavke .name {
-	margin-top: 30px;
-}
-
 #sodelavke .role {
 	color: #0B0B0B;
 }
@@ -422,14 +418,18 @@ footer {
 }
 
 footer .top {
+	background: url("../img/up.png") 0 -1px no-repeat;
 	position: absolute;
 	top: 20px;
+	padding-left: 24px;
 }
 
 footer .source {
+	background: url("../img/eye.png") 0 -2px no-repeat;
 	position: absolute;
 	top: 20px;
 	right: 0;
+	padding-left: 24px;
 }
 
 
