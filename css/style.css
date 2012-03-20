@@ -238,13 +238,6 @@ p {
 	color: #CCCCCC;
 }
 
-p.super {
-	font-size: 24px;
-	padding-top: 75px;
-	color: #0B0B0B;
-	font-style: italic;
-}
-
 p strong {
 	color: #0B0B0B;
 }
@@ -316,7 +309,18 @@ nav ul li a:visited {
 	width: 700px;
 }
 
-#superucenje a {
+#superucenje p.margin {
+	margin-top: 24px;
+}
+
+#superucenje p.super {
+	font-size: 24px;
+	padding-top: 50px;
+	color: #0B0B0B;
+	font-style: italic;
+}
+
+#superucenje p a {
 	color: #0B0B0B;
 }
 
