@@ -16,7 +16,7 @@ $(function() {
 	});
 	
 	// Smooth Scroll
-	$('a:not(".email, .source")').smoothScroll();
+	$('a:not(".email, .source, .show-details")').smoothScroll();
 	
 	// Team
 	$('#team li').hover(function() {
@@ -25,4 +25,10 @@ $(function() {
 		$('#sodelavke .name').html(img.attr('alt'));
 		$('#sodelavke .role').html(img.data('role'));
 	}, function() {});
+
+	// Show details
+	$('.show-details').click(function(e) {
+		e.preventDefault();
+		$('.details').toggle();
+	});
 });
