@@ -238,12 +238,8 @@ p {
 	color: #CCCCCC;
 }
 
-p.small {
+p.super {
 	font-size: 24px;
-	display: none;
-}
-
-p.details {
 	padding-top: 75px;
 	color: #0B0B0B;
 	font-style: italic;
@@ -308,6 +304,12 @@ nav ul li a:visited {
 	position: absolute;
 	bottom: -150px;
 	right: 0;
+}
+
+#storitve ol {
+	font-size: 24px;
+	list-style: none;
+	padding-bottom: 1em;
 }
 
 #superucenje p.narrow {

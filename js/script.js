@@ -16,12 +16,13 @@ $(function() {
 	});
 	
 	// Smooth Scroll
-	$('a:not(".email, .source, .show-details")').smoothScroll();
+	$('a:not(".email, .source, .show")').smoothScroll();
 	
 	// Show details on click
-	$('.show-details').click(function(e) {
+	$('.show').click(function(e) {
 		e.preventDefault();
-		$('.details').toggle();
+		$(this).parents('section').find('ol').addClass('hidden');
+		$('.' + $(this).attr("href").substring(1)).toggleClass('hidden');
 	});
 
 	// Show details on hover
@@ -36,3 +37,6 @@ $(function() {
 	}, function() {});
 
 });
+
+
+
