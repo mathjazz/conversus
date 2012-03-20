@@ -29,7 +29,9 @@ $(function() {
 		var section = $(this).parents('section');
 		section.find('img').removeClass("active");
 		var img = $(this).find('img').addClass("active");
-		section.find('.primary').html(img.attr('alt')).end()
+
+		section.find('aside').css("margin-left", $(this).position().left)
+			   .find('.primary').html(img.attr('alt')).end()
 			   .find('.secondary').html(img.data('secondary'));
 	}, function() {});
 
