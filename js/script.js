@@ -16,7 +16,11 @@ $(function() {
 	});
 	
 	// Smooth Scroll
-	$('a:not(".email, .source, .show")').smoothScroll();
+	$('a:not(".email, .source, .show")').smoothScroll({
+		afterScroll: function(data) {
+			window.location.hash = data.link.hash;
+		}
+	});
 	
 	// Show details on click
 	$('.show').click(function(e) {
