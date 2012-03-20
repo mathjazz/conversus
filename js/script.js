@@ -18,17 +18,19 @@ $(function() {
 	// Smooth Scroll
 	$('a:not(".email, .source, .show-details")').smoothScroll();
 	
-	// Team
-	$('#team li').hover(function() {
-		$('#team img').removeClass("active");
-		var img = $(this).find('img').addClass("active");
-		$('#sodelavke .name').html(img.attr('alt'));
-		$('#sodelavke .role').html(img.data('role'));
-	}, function() {});
-
-	// Show details
+	// Show details on click
 	$('.show-details').click(function(e) {
 		e.preventDefault();
 		$('.details').toggle();
 	});
+
+	// Show details on hover
+	$('.hover li').hover(function() {
+		var section = $(this).parents('section');
+		section.find('img').removeClass("active");
+		var img = $(this).find('img').addClass("active");
+		section.find('.primary').html(img.attr('alt')).end()
+			   .find('.secondary').html(img.data('secondary'));
+	}, function() {});
+
 });

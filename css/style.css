@@ -196,6 +196,22 @@ section.dark {
 	position: relative;
 }
 
+h1 {
+	float: left;	
+}
+
+h1 a:link,
+h1 a:visited {
+	display: block;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 5px #000000;
+    font-weight: normal;
+    padding: 11px 0 3px;
+	text-decoration: none;
+}
+
 h2 {
 	color: #0B0B0B;
 	font-size: 72px;
@@ -264,22 +280,6 @@ header .container {
 	height: 100%;
 }
 
-h1 {
-	float: left;	
-}
-
-h1 a:link,
-h1 a:visited {
-	display: block;
-    font-size: 36px;
-    line-height: 36px;
-    letter-spacing: -1px;
-    text-shadow: 2px 2px 5px #000000;
-    font-weight: normal;
-    padding: 11px 0 3px;
-	text-decoration: none;
-}
-
 nav ul {
 	float: right;
 }
@@ -329,14 +329,22 @@ nav ul li a:visited {
 	-webkit-box-shadow: 0 0 10px 2px #000000;
 }
 
+#jeziki .secondary {
+	font-style: italic;
+}
+
 #flags {
 	list-style: none;
-	margin: 30px 0 0;
+	margin: 30px 0;
 	text-align: right;
 }
 
 #flags li {
 	display: inline;
+}
+
+/* Rounded World Flags By kampongboy92: http://www.iconspedia.com/pack/rounded-world-flags-241/ */
+#flags li img {
 	opacity: 0.5;
 
 	-moz-transition: all 0.3s ease-out;  /* FF4+ */
@@ -346,7 +354,8 @@ nav ul li a:visited {
 	transition: all 0.3s ease-out;
 }
 
-#flags li:hover {
+#flags li img.active,
+#flags li img:hover {
 	opacity: 1;
 }
 
@@ -424,21 +433,8 @@ nav ul li a:visited {
 	-webkit-box-shadow: 0 0 10px #000000;
 }
 
-#sodelavke .role {
+#sodelavke .secondary {
 	color: #0B0B0B;
-}
-
-#sodelacke .details ul {
-	margin: 0;
-	padding: 0;
-	font-family: helvetica, arial, sans-serif;
-}
-
-#sodelavke .details li {
-	background: #000000;
-	text-transform: uppercase;
-	list-style: none;
-	display: inline;
 }
 
 footer {
